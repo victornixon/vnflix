@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNDS - VnFlix</title>
+    <link rel="stylesheet" href="css/vnflix.css.css" />
+</head>
+<body>
+    <main class='tela-principal'>
+
+        <header id='topo'>
+            <h1>VnFlix</h1> <span><a href=""><i class="far fa-user-circle"></i></a></span>
+        </header>
+        
+        <section id='conteudos'>
+            <article id='banner-principal'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2W25veMClcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <h2>Ciclones, Furacões, Tufões e Tornados</h2> Produção de Globo Terrestre -->
+            </article>
+
+            <h3>Filipe Ret (<span class='numDeVideos'></span>)</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 1)">&lt;</button>
+                <ul id='lista1' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/C49lLveQamo/maxresdefault.jpg" alt="capa" onClick='abrirModal("C49lLveQamo")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/-e9Gp_PvOqM/maxresdefault.jpg" alt="capa" onClick='abrirModal("-e9Gp_PvOqM")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/uQJwDnX6GbQ/maxresdefault.jpg" alt="capa" onClick='abrirModal("uQJwDnX6GbQ")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/OBt21_24zqU/maxresdefault.jpg" alt="capa" onClick='abrirModal("OBt21_24zqU")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/0hV9qYJ3IHQ/maxresdefault.jpg" alt="capa" onClick='abrirModal("0hV9qYJ3IHQ")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/ES7hPqTSY0s/maxresdefault.jpg" alt="capa" onClick='abrirModal("ES7hPqTSY0s")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/cw4oJ27GzBg/maxresdefault.jpg" alt="capa" onClick='abrirModal("cw4oJ27GzBg")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/UmjNw9leLDk/maxresdefault.jpg" alt="capa" onClick='abrirModal("UmjNw9leLDk")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/_nd0Ts4l4Ak/maxresdefault.jpg" alt="capa" onClick='abrirModal("_nd0Ts4l4Ak")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/YTJ7mh5HelA/maxresdefault.jpg" alt="capa" onClick='abrirModal("YTJ7mh5HelA")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 1)">&gt;</button>
+            </article>
+
+            <h3>Mc Rodolfinho(<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 2)">&lt;</button>
+                <ul id='lista2' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/Pt6DGd9VG-U/maxresdefault.jpg" alt="capa" onClick='abrirModal("Pt6DGd9VG-U")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/n7LFESSZzYk/maxresdefault.jpg" alt="capa" onClick='abrirModal("n7LFESSZzYk")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/w86u_r_RyZ8/maxresdefault.jpg" alt="capa" onClick='abrirModal("w86u_r_RyZ8")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/vya9gXIgpuc/maxresdefault.jpg" alt="capa" onClick='abrirModal("vya9gXIgpuc")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/yBWa4Qik4T4/maxresdefault.jpg" alt="capa" onClick='abrirModal("yBWa4Qik4T4")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/NqVg44Fr4-o/maxresdefault.jpg" alt="capa" onClick='abrirModal("NqVg44Fr4-o")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/fWkTKh9QrZw/maxresdefault.jpg" alt="capa" onClick='abrirModal("fWkTKh9QrZw")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 2)">&gt;</button>
+            </article>
+
+            <h3>Mc Poze do Rodo (<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 3)">&lt;</button>
+                <ul id='lista3' class='videos'>
+                    
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/BKDz5kNjkfU/maxresdefault.jpg" alt="capa" onClick='abrirModal("BKDz5kNjkfU")' />
+                    </li>
+
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/xAM51Ovpr9M/maxresdefault.jpg" alt="capa" onClick='abrirModal("xAM51Ovpr9M")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/FXRfr5-n4bY/maxresdefault.jpg" alt="capa" onClick='abrirModal("FXRfr5-n4bY")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/2PRAiVs3MVc/maxresdefault.jpg" alt="capa" onClick='abrirModal("2PRAiVs3MVc")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/LwPlWd48Erw/maxresdefault.jpg" alt="capa" onClick='abrirModal("LwPlWd48Erw")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/hyDElqwFnYI/maxresdefault.jpg" alt="capa" onClick='abrirModal("hyDElqwFnYI")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/76_J1jZLp5s/maxresdefault.jpg" alt="capa" onClick='abrirModal("76_J1jZLp5s")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/SrOzgslo59A/maxresdefault.jpg" alt="capa" onClick='abrirModal("SrOzgslo59A")' />
+                    </li>
+                    
+
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 3)">&gt;</button>
+            </article>
+
+            <h3>Orochi (<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 4)">&lt;</button>
+                <ul id='lista4' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/L8_116bLouo/maxresdefault.jpg" alt="capa" onClick='abrirModal("L8_116bLouo")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/tHxOgMIUxvY/maxresdefault.jpg" alt="capa" onClick='abrirModal("tHxOgMIUxvY")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/AoIkvrgiPQg/maxresdefault.jpg" alt="capa" onClick='abrirModal("AoIkvrgiPQg")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/yfGMPDKq1Pg/maxresdefault.jpg" alt="capa" onClick='abrirModal("yfGMPDKq1Pg")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/XNROQyD5EH8/maxresdefault.jpg" alt="capa" onClick='abrirModal("XNROQyD5EH8")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/dsMdKWG5YfY/maxresdefault.jpg" alt="capa" onClick='abrirModal("dsMdKWG5YfY")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 4)">&gt;</button>
+            </article>
+
+            <h3>Projota(<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 5)">&lt;</button>
+                <ul id='lista5' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/kzLESxMqnTg/maxresdefault.jpg" alt="capa" onClick='abrirModal("kzLESxMqnTg")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/44Qg63RfEG0/maxresdefault.jpg" alt="capa" onClick='abrirModal("44Qg63RfEG0")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/Yyzu2yfdZtY/maxresdefault.jpg" alt="capa" onClick='abrirModal("Yyzu2yfdZtY")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/LYDESzzeeT4/maxresdefault.jpg" alt="capa" onClick='abrirModal("LYDESzzeeT4")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/0w0qU6zbgZM/maxresdefault.jpg" alt="capa" onClick='abrirModal("0w0qU6zbgZM")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/uJNR0aKqgZ8/maxresdefault.jpg" alt="capa" onClick='abrirModal("uJNR0aKqgZ8")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/kOzua7G2f3U/maxresdefault.jpg" alt="capa" onClick='abrirModal("kOzua7G2f3U")' />
+                    </li>
+                    
+                </ul>
+                <button id='btnNext' onclick="show(+1, 5)">&gt;</button>
+            </article>
+            
+        </section>
+
+        <!-- Janela Modal nela vamos abrir os videos -->
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <iframe id='iframeVideo' width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- autoplay; -->
+            </div>
+        </div>
+
+        <footer id="rodape">
+            <p> &copy; Desenvolvido por - <strong><i>Victor Nixon</i></strong> -
+            <a href="https://www.facebook.com/victorvnds" target="./blank">Facebook</a> 
+            | <a href="http://instagram.com/victor_vnds" target="./blank">Instagram</a></p>
+            </footer>
+    </main>
+<script src="js/vnflix.js.js"></script>
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/9c34151a1a.js" crossorigin="anonymous"></script>
+</body>
+</html>
